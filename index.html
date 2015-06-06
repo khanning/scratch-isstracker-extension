@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Scratch ISS Tracker Extension</title>
+<link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+<body>
+
+<div id="header-container">
+  <header>
+    <h1>Scratch ISS Tracker Extension</h1>
+  </header>
+</div>
+
+<div id="content-container">
+
+  <h1>Contents</h1>
+
+  <ul id="nav">
+    <li><a href="#intro">Introduction</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#blocks">Scratch Blocks</a></li>
+    <li><a href="#examples">Example Projects</a></li>
+  </ul>
+
+  <a name="intro" />
+  <h1>Introduction</h1>
+
+  <p>This <a href="https://scratch.mit.edu">Scratch</a> extension lets you track the progress of the International Space Station in it's orbit around the planet Earth.</p>
+
+  <p>The International Space Station data comes from <a target="_new" href="http://wheretheiss.at/">wheretheiss.at</a> created by Bill Shupp.</p>
+
+  <p>Longitude/Latitude data comes from <a target="_new" href="https://www.openstreetmap.org">OpenStreetMap</a>.</p>
+
+  <p><a target="_new" href="http://www.nasa.gov/mission_pages/station/main/index.html">Get more information about the Internation Space Station at NASA</a></p>
+
+  <img width="600" src="res/screenshot.png" />
+  <br />
+  <i>Example project plotting the ISS as it orbits Earth</i>
+
+  <a name="getting-started" />
+  <h1>Getting Started</h1>
+
+  <p>All you need to use the ISS Tracker extension is an active internet connection.</p>
+
+  <a target="_new" href="http://scratchx.org/?url=https://khanning.github.io/scratch-isstracker-extension/iss_extension.js">Load the ISS Tracker extension on ScratchX</a>
+  
+  <a name="blocks" />
+  <h1>Scratch Blocks</h1>
+  <p>This is a brief description of each of the Scratch blocks included with the ISS Tracker extension.</p>
+  <br />
+
+  <div class="block">
+  <img height="52" src="res/blocks/wheniss.png" />
+  <p>Runs when the ISS comes within 500km of a specified location.</p>
+  </div>
+
+  <hr />
+
+  <div class="block">
+  <img height="65" src="res/blocks/distancefrom.png" />
+  <p>Gives the distance between the ISS and a specified location. Distance can be returned in kilometers or miles. The <a target="_new" href="http://en.wikipedia.org/wiki/Haversine_formula">haversine formula</a> is used to calculate the distance between two points.</p>
+
+  <hr />
+
+  <div class="block">
+  <img height="100" src="res/blocks/isslocation.png" />
+  <p>Provides the current longitude, latitude, altitude, or velocity of the ISS.</p>
+  <dl>
+    <dt>Longitude</dt>
+    <dd>The east-west position of the ISS in degrees.</dd>
+    <dt>Latitude</dt>
+    <dd>The north-south position of the ISS in degrees.</dd>
+    <dt>Altitude</dt>
+    <dd>The distance between the ISS and Earth in kilometers.</dd>
+    <dt>Velocity</dt>
+    <dd>The speed of the ISS as it orbits Earth in kilometers per hour</dd>
+  </dl>
+  </div>
+
+  <a name="examples" />
+  <h1>Example Projects</h1>
+
+  <dl>
+    <dt><a target="_new" href="http://scratchx.org/?url=http://khanning.github.io/scratch-isstracker-extension/examples/ISS_Tracker.sbx">ISS Tracker</a></dt>
+    <dd>Plot the path of the ISS as it orbits around Earth. Record the last time the ISS passes over Boston, MA.</dd>
+  </dl>
+
+</div>
+
+<br />
+
+</body>
+</html>
