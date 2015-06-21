@@ -51,7 +51,6 @@
   }
 
   function updateISSLocation() {
-    console.log("refreshing");
     $.ajax({
       type: "GET",
       dataType: "json",
