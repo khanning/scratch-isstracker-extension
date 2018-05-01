@@ -31,7 +31,7 @@
 
     $.ajax({
       type: "GET",
-      url: "http://nominatim.openstreetmap.org/search/",
+      url: "https://nominatim.openstreetmap.org/search/",
       dataType: "jsonp",
       data: {
         format: "json",
@@ -137,7 +137,7 @@
       loc: ['longitude', 'latitude', 'altitude', 'velocity'],
       measurements: ['kilometers', 'miles']
     },
-    url: 'http://khanning.github.io/scratch-isstracker-extension'
+    url: 'https://khanning.github.io/scratch-isstracker-extension'
   };
 
   ScratchExtensions.register('ISS Tracker', descriptor, ext);
